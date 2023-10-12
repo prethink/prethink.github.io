@@ -10,7 +10,7 @@
 <body>
     <div><center><h1>Тестирование WebApp</h1></center></div>
     <div class='user'>
-        <div>Ваш UserName4:<span class='username'></span></div>
+        <div>Ваш UserName5:<span class='username'></span></div>
         <div class='photo'></div>
     </div>
     <script>
@@ -22,7 +22,7 @@
             window.Telegram.WebApp.expand();
             window.Telegram.WebApp.ready();
             window.Telegram.WebApp.MainButton.show();
-            var x = JSON.stringify(WebApp.initData)
+            var x = JSON.stringify(WebApp.WebAppUser.username)
             $('.username').text(x)
         });
 
