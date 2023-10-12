@@ -10,7 +10,7 @@
 <body>
     <div><center><h1>Тестирование WebApp</h1></center></div>
     <div class='user'>
-        <div>Ваш UserName:<span class='username'></span></div>
+        <div>Ваш UserName1:<span class='username'></span></div>
         <div class='photo'></div>
     </div>
     <script>
@@ -21,7 +21,7 @@
             window.Telegram.WebApp.expand();
             window.Telegram.WebApp.ready();
             window.Telegram.WebApp.MainButton.show();
-            $('.username').text(window.Telegram.WebAppUser.username)
+            $('.username').text(window.Telegram.WebApp.WebAppUser.username)
         });
 
         function OnClickTelegram() {
