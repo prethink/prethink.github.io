@@ -10,18 +10,19 @@
 <body>
     <div><center><h1>Тестирование WebApp</h1></center></div>
     <div class='user'>
-        <div>Ваш UserName1:<span class='username'></span></div>
+        <div>Ваш UserName2:<span class='username'></span></div>
         <div class='photo'></div>
     </div>
     <script>
         $(document).ready(function () {
+            var WebApp = window.Telegram.WebApp;
             window.Telegram.WebApp.MainButton.setParams({ text: 'Сохранить' });
             window.Telegram.WebApp.MainButton.enable();
             window.Telegram.WebApp.MainButton.onClick(OnClickTelegram);
             window.Telegram.WebApp.expand();
             window.Telegram.WebApp.ready();
             window.Telegram.WebApp.MainButton.show();
-            $('.username').text(window.Telegram.WebApp.WebAppUser.username)
+            $('.username').text(WebApp.WebAppInitData.user.username)
         });
 
         function OnClickTelegram() {
